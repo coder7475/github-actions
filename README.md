@@ -21,6 +21,20 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 - Can have multiple **workflows** in repo triggered by different events.
 
+## Tasks to automate
+
+The following tasks are up for automation:
+
+- Ensure the code passes all unit tests
+- Perform code quality and compliance checks to make sure the source code meets the organization's standards
+- Check the code and its dependencies for known security issues
+- Build the code integrating new source from (potentially) multiple contributors
+- Ensure the software passes integration tests
+  Version the new build
+- Deliver the new binaries to the appropriate filesystem location
+- Deploy the new binaries to one or more servers
+- If any of these tasks don't pass, report the issue to the proper individual or team for resolution
+
 ## Components
 
 - GitHub Actions workflows can be **triggered by events** in a repository, such as a pull request or an issue being created.
