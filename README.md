@@ -33,7 +33,17 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 - An event is a specific activity in a repository that triggers a workflow run.
 
-- Examples include creating a pull request, opening an issue, or pushing a commit. Workflows can also be triggered on a schedule, via a REST API, or manually.
+- The **on** attribute specifies the **event trigger** to be used.
+
+- There are 35+ event triggers:
+
+- Examples:
+  - **Pushes**: Trigger an action on any push to the repo
+  - **Pull Request**: Run actions when pull request are opened, updated or merged
+  - **Issues**: Execute actions based on issue activities, like creation or labeling
+  - **Release**: Automate workflows when a new release is published
+  - **Schedule Events**: Schedule actions to run at specific times
+  - **Manual Triggers**: Allow manual triggering of actions through the GitHub UI.
 
 ### Jobs
 
