@@ -35,6 +35,10 @@ The following tasks are up for automation:
 - Deploy the new binaries to one or more servers
 - If any of these tasks don't pass, report the issue to the proper individual or team for resolution
 
+## The Components of GitHub Actions
+
+![Components](https://learn.microsoft.com/en-us/training/github/github-actions-automate-tasks/media/github-actions-workflow-components.png)
+
 ## Components
 
 - GitHub Actions workflows can be **triggered by events** in a repository, such as a pull request or an issue being created.
@@ -81,6 +85,18 @@ The following tasks are up for automation:
 
 - You can create custom actions or use actions available in the GitHub Marketplace.
 
+- - There are three types of github actions:
+
+  - Container Actions
+  - JavaScript Actions
+  - Composite Actions
+
+- With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
+
+- **JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+
+- **Composite actions** allow you to combine multiple workflow steps within one action. For example, you can use this feature to bundle together multiple run commands into an action, and then have a workflow that executes the bundled commands as a single step using that action.
+
 ### Runners
 
 - A runner is a server that executes workflows when triggered.
@@ -93,7 +109,7 @@ The following tasks are up for automation:
 
 - Alternatively, you can host your own runners for custom operating systems or specific hardware needs.
 
-## Recommendation when using GitHub Actions
+## Recommendations when using GitHub Actions
 
 - Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
 
