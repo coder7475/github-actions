@@ -93,6 +93,16 @@ The following tasks are up for automation:
 
 - Alternatively, you can host your own runners for custom operating systems or specific hardware needs.
 
+## Recommendation when using GitHub Actions
+
+- Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
+
+- Check if the action is in the GitHub Marketplace. This is a good check, even if an action does not have to be on the GitHub Marketplace to be valid.
+
+- Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
+
+- Include the version of the action you're using by specifying a Git ref, SHA, or tag
+
 ## References
 
 - [GitHub Docs](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions)
