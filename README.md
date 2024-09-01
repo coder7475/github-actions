@@ -6,6 +6,8 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 - GitHub Actions is a **CI/CD pipeline directly integrated with github repository**
 
+- GitHub Actions optimize code-delivery time, from idea to deployment, on a community-powered platform.
+
 - It allows us to **automate**:
 
   - Running Test Suits
