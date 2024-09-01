@@ -29,6 +29,44 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
   - Run a **script** defined by the user.
   - Run an **action**, which is a reusable extension to simplify the workflow.
 
+### Events
+
+- An event is a specific activity in a repository that triggers a workflow run.
+
+- Examples include creating a pull request, opening an issue, or pushing a commit. Workflows can also be triggered on a schedule, via a REST API, or manually.
+
+### Jobs
+
+- A job is a set of steps in a workflow executed on the same runner.
+
+  - Each step can either be a shell script or an action.
+
+  - Steps are executed sequentially and can share data between them since they run on the same runner.
+
+- Jobs can be configured to run independently or have dependencies on other jobs. By default, jobs run in parallel unless a dependency is specified.
+
+- For example, multiple build jobs can run in parallel, and a packaging job can depend on their successful completion.
+
+### Actions
+
+- An action is a reusable application for the GitHub Actions platform that performs complex but repetitive tasks.
+
+- Actions help reduce repetitive code in workflows, such as setting up the build environment or authentication.
+
+- You can create custom actions or use actions available in the GitHub Marketplace.
+
+### Runners
+
+- A runner is a server that executes workflows when triggered.
+
+- Each runner runs a single job at a time.
+
+- GitHub provides runners for Ubuntu Linux, Microsoft Windows, and macOS, each running on a newly provisioned virtual machine.
+
+- GitHub also offers larger runners for more demanding workloads.
+
+- Alternatively, you can host your own runners for custom operating systems or specific hardware needs.
+
 ## References
 
 - [GitHub Docs](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions)
