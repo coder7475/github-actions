@@ -1,4 +1,4 @@
-# GitHub Actions
+## GitHub Actions
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to **automate** your build, test, and deployment pipeline
 
@@ -39,15 +39,23 @@ The following tasks are up for automation:
 
 ![Components](https://learn.microsoft.com/en-us/training/github/github-actions-automate-tasks/media/github-actions-workflow-components.png)
 
-## Components
+## Explanation of Components
 
-- GitHub Actions workflows can be **triggered by events** in a repository, such as a pull request or an issue being created.
+- GitHub Actions **workflows** can be **triggered by events** in a repository, such as a pull request or an issue being created.
 - A workflow consists of one or more **jobs**.
 - Jobs can run _sequentially_ or in _parallel_.
 - Each job runs in its own **virtual machine runner** or a container.
 - Jobs contain steps that either:
   - Run a **script** defined by the user.
   - Run an **action**, which is a reusable extension to simplify the workflow.
+
+### Workflows
+
+- A workflow is an automated process that you add to your repository.
+
+- A workflow needs to have at least one job, and different events can trigger it.
+
+- You can use it to build, test, package, release, or deploy your repository's project on GitHub.
 
 ### Events
 
